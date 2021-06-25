@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <!--custom styling-->
+    <link rel="stylesheet" href="Style/style.css">
+
+</head>
+<body>
+    <!---Aturan
+        1. tampilkan 1 pertanyaan berserta jawabannya terlebih dahulu. setelah terjawab, muncul pertanyaan baru
+        2. pertanyaan muncul secara acak
+        3. jawaban akan di input kedalam array js untuk dikirim ke db
+    -->
+    <div class="main">
+        <div class="container">
+            <div id="question-container" class="hide">
+                <div id="question" class="question">Question</div>
+                <div id="ans-choice" class="btn-grid">
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-done" data-done="0">
+                        <div id="progress-text">
+                            0
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="start-btn" class="btn-start btn">Take The Test</button>
+            <button id="next-btn" class="btn-next btn hide">Next</button>
+        </div>
+        <p id="pText" class="result hide"></p>
+    </div>
+    <script src="Javascript/app.js"></script>
+</body>
+</html>
